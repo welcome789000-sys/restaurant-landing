@@ -1,0 +1,56 @@
+:root{--bg:#faf5ec;--card:#fffdf8;--line:#e7dcc6;--accent:#b3542e;--accent-dark:#8f3f20;--text:#2c2118;--mute:#8a7a66}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Cairo',Tahoma,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.8}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+.top{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;padding:14px 5%;background:rgba(250,245,236,.92);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+.logo{font-weight:800;font-size:1.6rem}.logo span{color:var(--accent)}
+nav{display:flex;align-items:center;gap:22px;font-size:.95rem;color:var(--mute)}
+nav a:hover{color:var(--text)}
+.btn{display:inline-block;background:var(--accent);color:#fff;font-weight:800;padding:12px 28px;border-radius:8px;border:none;cursor:pointer;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.small{padding:6px 18px;font-size:.9rem}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--accent)}
+section{padding:70px 5%;max-width:1000px;margin:auto}
+h2{font-size:1.9rem;margin-bottom:28px}
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:30px;align-items:center;min-height:520px}
+.eyebrow{color:var(--accent);font-weight:600;margin-bottom:8px}
+h1{font-size:3.2rem;line-height:1.3;font-weight:800;margin-bottom:16px}
+.lead{color:var(--mute);font-size:1.1rem;max-width:30em;margin-bottom:28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-art{display:flex;justify-content:center}
+.cloche{position:relative;width:260px;height:190px}
+.cloche .dome{position:absolute;bottom:34px;right:10px;width:240px;height:120px;background:linear-gradient(160deg,var(--accent) 0%,var(--accent-dark) 100%);border-radius:120px 120px 12px 12px}
+.cloche .knob{position:absolute;bottom:152px;right:118px;width:26px;height:26px;background:var(--accent-dark);border-radius:50%}
+.cloche .plate{position:absolute;bottom:14px;right:0;width:260px;height:16px;background:var(--text);border-radius:8px;opacity:.85}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center;padding:30px 5%;border-block:1px solid var(--line);max-width:none}
+.facts strong{display:block;font-size:1.8rem;color:var(--accent)}.facts span{color:var(--mute)}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.chip{background:var(--card);border:1px solid var(--line);color:var(--mute);padding:8px 20px;border-radius:999px;cursor:pointer;font-size:.95rem}
+.chip:hover{color:var(--text);border-color:var(--accent)}
+.chip.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+.menu{list-style:none}
+.menu li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.menu li.hidden{display:none}
+.menu h3{font-size:1.15rem}.menu p{color:var(--mute);font-size:.92rem}
+.menu b{color:var(--accent);font-size:1.2rem;white-space:nowrap}
+.note{color:var(--mute);font-size:.85rem;margin-top:14px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cards article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px}
+.cards h3{margin-bottom:6px;color:var(--accent)}.cards p{color:var(--mute);font-size:.95rem}
+table{width:100%;max-width:420px;border-collapse:collapse}
+td{padding:12px 0;border-bottom:1px solid var(--line)}td:last-child{text-align:left;color:var(--accent);font-weight:600}
+.contact{text-align:center}.contact p{color:var(--mute);margin-bottom:22px}
+.addr{margin-top:22px;font-size:.95rem}
+footer{text-align:center;padding:30px 5%;border-top:1px solid var(--line);color:var(--mute);font-size:.9rem}
+.demo{font-size:.8rem;margin-top:4px}
+@media(max-width:720px){
+ nav a:not(.btn){display:none}
+ .hero{grid-template-columns:1fr;min-height:auto;padding-top:40px}
+ .hero-art{display:none}
+ h1{font-size:2.3rem}
+ .cards{grid-template-columns:1fr}
+ .facts strong{font-size:1.3rem}
+ section{padding:50px 5%}
+}
