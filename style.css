@@ -68,3 +68,14 @@ footer{text-align:center;padding:30px 5%;border-top:1px solid var(--line);color:
 .about p{color:var(--mute);max-width:36em}
 .hrs{margin:26px auto 0}
 @media(max-width:720px){.dish-grid{grid-template-columns:1fr 1fr}}
+
+/* placeholder photo boxes */
+.ph{border-style:solid;border-width:1px}
+.ph::before{top:10px;inset-inline-start:10px;padding:2px 10px;border-radius:99px;background:rgba(128,128,128,.16);opacity:1;letter-spacing:0}
+.ph::after{content:"";position:absolute;inset:0;margin:auto;width:42px;height:42px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='6' width='18' height='14' rx='2'/%3E%3Ccircle cx='12' cy='13' r='3.5'/%3E%3Cpath d='M8 6l1.5-2h5L16 6'/%3E%3C/svg%3E") center/contain no-repeat;opacity:.55;pointer-events:none}
+.ph:has(img)::before,.ph:has(img)::after{display:none}
+.addr-box{margin-top:22px;display:inline-grid;gap:2px;text-align:start;padding:12px 18px;border:1px solid var(--line);border-radius:12px}
+.addr-box b{font-size:.8rem;color:var(--mute);font-weight:600}
+.addr-box span{font-weight:600}
+.addr-box em{font-style:normal;font-size:.82rem;color:var(--mute)}
+.btn.wa.off{pointer-events:none;opacity:.5}
