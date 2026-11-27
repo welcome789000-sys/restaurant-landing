@@ -21,7 +21,9 @@ var WHATSAPP_NUMBER = "";
   if (!a) return;
   if (!WHATSAPP_NUMBER) {
     a.classList.add('off');
-    a.textContent = 'رقم الواتساب هيتحط هنا';
+    a.textContent = 'الطلب بالواتساب قريبًا';
+    a.setAttribute('aria-disabled', 'true');
+    a.setAttribute('tabindex', '-1');
     a.addEventListener('click', function (e) { e.preventDefault(); });
     return;
   }
