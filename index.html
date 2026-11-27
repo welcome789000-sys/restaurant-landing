@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>مطعم زيتونة | أكل شرقي في رشيد</title>
-<meta name="description" content="مطعم زيتونة: أكل شرقي بمكونات طازة كل يوم. اطلب أوردرك على واتساب.">
+<title>مطعم زيتونة | أكل شرقي، رشيد</title>
+<meta name="description" content="مطعم زيتونة: أكل شرقي بيتي. نموذج تصميم لعرض الأعمال.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
@@ -14,9 +14,9 @@
 <header class="top">
   <a class="logo" href="#home">زيتونة<span>.</span></a>
   <nav>
+    <a href="#dishes">أطباقنا</a>
     <a href="#menu">المنيو</a>
-    <a href="#why">ليه زيتونة</a>
-    <a href="#hours">المواعيد</a>
+    <a href="#about">عن المطبخ</a>
     <a class="btn small" href="#contact">اطلب</a>
   </nav>
 </header>
@@ -24,12 +24,12 @@
 <main>
 <section class="hero" id="home">
   <div class="hero-text">
-    <p class="eyebrow">مطعم شرقي على كورنيش النيل</p>
-    <h1>أكل بيتي.<br>بطعم مش هتلاقيه تاني.</h1>
-    <p class="lead">خضار ولحوم طازة كل يوم الصبح، ووصفات متوارثة زي ما هي من 15 سنة. كل صنف بيتعمل لما تطلبه، مش مستنيك في السخان.</p>
+    <p class="eyebrow">أكل شرقي، كورنيش رشيد</p>
+    <h1>غدا الجمعة<br>اللي واحشك.</h1>
+    <p class="lead">ورق عنب ومحاشي وكفتة على الفحم. أكل بيتي بيتحط على السفرة وإنت قاعد مرتاح.</p>
     <div class="cta">
-      <a class="btn" href="#contact">اطلب أوردرك</a>
-      <a class="btn ghost" href="#menu">شوف المنيو</a>
+      <a class="btn" href="#contact">اطلب دلوقتي</a>
+      <a class="btn ghost" href="#dishes">شوف الأطباق</a>
     </div>
   </div>
   <div class="hero-art" aria-hidden="true">
@@ -37,14 +37,19 @@
   </div>
 </section>
 
-<section class="facts">
-  <div><strong>15</strong><span>سنة خبرة</span></div>
-  <div><strong>+40</strong><span>صنف في المنيو</span></div>
-  <div><strong>45 دقيقة</strong><span>متوسط التوصيل</span></div>
+<section id="dishes">
+  <h2>أطباق الأسبوع</h2>
+  <div class="dish-grid">
+    <figure class="dish"><div class="ph"><!-- حط صورة الطبق: <img src="dish-1.jpg" alt="كفتة بلدي"> --></div><figcaption><span>كفتة بلدي</span><b>160 ج</b></figcaption></figure>
+    <figure class="dish"><div class="ph"></div><figcaption><span>سمك بلطي مشوي</span><b>140 ج</b></figcaption></figure>
+    <figure class="dish"><div class="ph"></div><figcaption><span>محاشي مشكلة</span><b>120 ج</b></figcaption></figure>
+    <figure class="dish"><div class="ph"></div><figcaption><span>كنافة بالمكسرات</span><b>50 ج</b></figcaption></figure>
+  </div>
+  <p class="edit-note">الصور أماكن فاضية. ضيف صور أطباقك الحقيقية.</p>
 </section>
 
 <section id="menu">
-  <h2>المنيو</h2>
+  <h2>المنيو كامل</h2>
   <div class="filters">
     <button class="chip active" data-cat="all">الكل</button>
     <button class="chip" data-cat="starter">مقبلات</button>
@@ -55,45 +60,37 @@
     <li data-cat="starter"><div><h3>ورق عنب</h3><p>محشو رز وخضار على الطريقة البيتي، 8 قطع</p></div><b>60 ج</b></li>
     <li data-cat="starter"><div><h3>بابا غنوج</h3><p>باذنجان مشوي على الفحم مع طحينة وليمون</p></div><b>45 ج</b></li>
     <li data-cat="starter"><div><h3>سلطة بلدي وطحينة</h3><p>طبق مشترك يكفي فردين</p></div><b>35 ج</b></li>
-    <li data-cat="main"><div><h3>كفتة بلدي</h3><p>لحمة ضاني متبلة، بتتشوى على الفحم قدامك</p></div><b>160 ج</b></li>
+    <li data-cat="main"><div><h3>كفتة بلدي</h3><p>لحمة متبلة ومشوية على الفحم</p></div><b>160 ج</b></li>
     <li data-cat="main"><div><h3>فرخة محمرة كاملة</h3><p>مع رز بالشعرية وشوربة</p></div><b>180 ج</b></li>
     <li data-cat="main"><div><h3>سمك بلطي مشوي</h3><p>سمك طازة من رشيد، مع رز صيادية</p></div><b>140 ج</b></li>
     <li data-cat="main"><div><h3>ملوخية بالأرانب</h3><p>أرنب كامل مع أرز أبيض وشطة</p></div><b>170 ج</b></li>
     <li data-cat="main"><div><h3>محاشي مشكلة</h3><p>كوسة وبتنجان وفلفل، طبق يكفي 3 أفراد</p></div><b>120 ج</b></li>
     <li data-cat="dessert"><div><h3>كنافة بالمكسرات</h3><p>قطعة سخنة من الفرن على طول</p></div><b>50 ج</b></li>
-    <li data-cat="dessert"><div><h3>أم علي</h3><p>باللبن والمكسرات، بتتعمل في الفرن قدامك</p></div><b>55 ج</b></li>
+    <li data-cat="dessert"><div><h3>أم علي</h3><p>باللبن والمكسرات، من الفرن</p></div><b>55 ج</b></li>
   </ul>
-  <p class="note">الأسعار تقريبية للعرض فقط.</p>
+  <p class="note">أسعار تجريبية، عدّلها على منيو المطعم.</p>
 </section>
 
-<section id="why" class="why">
-  <h2>ليه زيتونة</h2>
-  <div class="cards">
-    <article><h3>طازة كل يوم</h3><p>مفيش أكل متخزن. السوق الصبح، والطبخ على قد الأوردرات.</p></article>
-    <article><h3>توصيل لحد البيت</h3><p>بنوصل جوه رشيد والقرى اللي حواليها في أقل من ساعة.</p></article>
-    <article><h3>أسعار عادلة</h3><p>نفس الأسعار من 3 سنين، والكمية زي ما هي أو أكتر.</p></article>
-  </div>
-</section>
-
-<section id="hours" class="hours">
-  <h2>مواعيد العمل</h2>
-  <table>
-    <tr><td>كل أيام الأسبوع</td><td>12 ض – 12 م</td></tr>
-    <tr><td>آخر أوردر</td><td>11 م</td></tr>
-  </table>
+<section id="about" class="about">
+  <h2>عن المطبخ</h2>
+  <p>وصفات البيت، من غير تعقيد. اكتب هنا حكاية المطعم بكلامك: مين بيطبخ، ومن إمتى، وإيه الطبق اللي بيتعمل بطريقة خاصة.</p>
 </section>
 
 <section id="contact" class="contact">
-  <h2>اطلب أوردرك</h2>
-  <p>ابعتلنا على واتساب بالأصناف والعنوان، وهنأكد عليك الأوردر ومعاد التوصيل.</p>
-  <a class="btn" href="https://wa.me/201000000000?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%A3%D9%88%D8%B1%D8%AF%D8%B1" rel="noopener">اطلب على واتساب</a>
-  <p class="addr">كورنيش النيل، رشيد</p>
+  <h2>اطلب</h2>
+  <p>ابعت الأصناف والعنوان على واتساب، ونرد عليك بتأكيد الأوردر.</p>
+  <a class="btn wa" id="wa" href="#contact" data-text="أريد طلب أوردر">اطلب على واتساب</a>
+  <table class="hrs">
+    <tr><td>كل يوم</td><td>12 ظهرًا – 12 منتصف الليل</td></tr>
+    <tr><td>آخر أوردر</td><td>11 م</td></tr>
+  </table>
+  <p class="addr">العنوان: حط عنوان المطعم هنا</p>
 </section>
 </main>
 
 <footer>
-  <p>مطعم زيتونة © 2026</p>
-  <p class="demo">نموذج تصميم لعرض الأعمال، المطعم والأسعار والأرقام تجريبية.</p>
+  <p>مطعم زيتونة</p>
+  <p class="demo">نموذج تصميم لعرض الأعمال. الاسم والأسعار والمواعيد تجريبية.</p>
 </footer>
 <script src="script.js"></script>
 </body>
