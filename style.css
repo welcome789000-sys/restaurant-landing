@@ -24,7 +24,7 @@ h1{font-size:3.2rem;line-height:1.3;font-weight:800;margin-bottom:16px}
 .cloche .dome{position:absolute;bottom:34px;right:10px;width:240px;height:120px;background:linear-gradient(160deg,var(--accent) 0%,var(--accent-dark) 100%);border-radius:120px 120px 12px 12px}
 .cloche .knob{position:absolute;bottom:152px;right:118px;width:26px;height:26px;background:var(--accent-dark);border-radius:50%}
 .cloche .plate{position:absolute;bottom:14px;right:0;width:260px;height:16px;background:var(--text);border-radius:8px;opacity:.85}
-.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center;padding:30px 5%;border-block:1px solid var(--line);max-width:none}
+.facts-unused{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center;padding:30px 5%;border-block:1px solid var(--line);max-width:none}
 .facts strong{display:block;font-size:1.8rem;color:var(--accent)}.facts span{color:var(--mute)}
 .filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
 .chip{background:var(--card);border:1px solid var(--line);color:var(--mute);padding:8px 20px;border-radius:999px;cursor:pointer;font-size:.95rem}
@@ -54,3 +54,17 @@ footer{text-align:center;padding:30px 5%;border-top:1px solid var(--line);color:
  .facts strong{font-size:1.3rem}
  section{padding:50px 5%}
 }
+
+/* ---- v2 additions ---- */
+.ph{position:relative;display:flex;align-items:flex-end;justify-content:flex-start;border-radius:12px;border:1px dashed var(--line);min-height:180px;padding:12px;color:var(--mute);font-size:.85rem;overflow:hidden}
+.ph::before{content:"مكان الصورة";position:absolute;top:10px;inset-inline-start:12px;font-size:.75rem;opacity:.7}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.edit-note{color:var(--mute);font-size:.82rem;margin-top:14px}
+.btn.wa.off{opacity:.55;cursor:not-allowed}
+.dish-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.dish .ph{min-height:200px;background:linear-gradient(135deg,#f1e4cd,#e7d3b0)}
+.dish figcaption{display:flex;justify-content:space-between;gap:8px;padding:8px 2px;font-weight:600}
+.dish b{color:var(--accent)}
+.about p{color:var(--mute);max-width:36em}
+.hrs{margin:26px auto 0}
+@media(max-width:720px){.dish-grid{grid-template-columns:1fr 1fr}}
